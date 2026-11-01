@@ -12,6 +12,10 @@
   &nbsp;•&nbsp; Windows 10 / 11 &nbsp;•&nbsp; Gratuit
 </p>
 
+<p align="center">
+  <img src="images/apercu.png" alt="Aperçu de BOB MUSIC" width="100%">
+</p>
+
 ---
 
 ## ✨ En bref
