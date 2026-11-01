@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/lepretrevincent89-source/BOBMUSIC/releases/latest"><b>⬇️ Télécharger la dernière version</b></a>
-  &nbsp;•&nbsp; Windows 10 / 11 &nbsp;•&nbsp; Gratuit
+  \&nbsp;•\&nbsp; Windows 10 / 11 \&nbsp;•\&nbsp; Gratuit
 </p>
 ---
 ✨ En bref
@@ -17,8 +17,8 @@ artistes, albums, titres, playlists, recherche, file d'attente… avec une vraie
 Va sur la page des versions (Releases).
 Dans Assets, télécharge `BOB-MUSIC-Setup-x.y.z.exe`.
 Lance-le et suis l'installation : pas besoin d'être administrateur. Les raccourcis Bureau et menu Démarrer sont créés.
-> **Windows affiche « Windows a protégé votre ordinateur » ?**
-> C'est normal pour un logiciel indépendant non signé. Clique sur **Informations complémentaires → Exécuter quand même**.
+> \*\*Windows affiche « Windows a protégé votre ordinateur » ?\*\*
+> C'est normal pour un logiciel indépendant non signé. Clique sur \*\*Informations complémentaires → Exécuter quand même\*\*.
 Version portable : le fichier `BOB-MUSIC-x.y.z-portable.exe` se lance sans installation, depuis une clé USB par exemple. Elle ne se met pas à jour toute seule.
 🔑 Première connexion
 Clique sur Se connecter avec Plex : ton navigateur s'ouvre, connecte-toi et autorise l'application.
