@@ -1,5 +1,3 @@
-# BOB MUSIC
-
 <p align="center">
   <img src="docs/images/banniere.png" alt="BOB MUSIC" width="720">
 </p>
