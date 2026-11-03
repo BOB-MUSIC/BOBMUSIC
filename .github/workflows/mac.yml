@@ -47,19 +47,46 @@ jobs:
         working-directory: app
         run: npm install
 
+      - name: Réglages Mac (signature locale, noms des fichiers)
+        working-directory: app
+        run: |
+          node -e '
+            const fs = require("fs"); const b = JSON.parse(fs.readFileSync("package.json", "utf8")).build || {};
+            const name = "BOB-MUSIC-${version}-mac-${arch}.${ext}";
+            b.mac = Object.assign({}, b.mac, { target: [{ target: "dmg" }], icon: "build/icon.png", category: "public.app-category.music",
+              identity: "-", hardenedRuntime: false, gatekeeperAssess: false, artifactName: name,
+              extendInfo: Object.assign({ NSLocalNetworkUsageDescription: "BOB MUSIC se connecte à ton serveur Plex et à la télécommande de ton téléphone sur le réseau local." }, (b.mac || {}).extendInfo) });
+            b.dmg = Object.assign({}, b.dmg, { title: "BOB MUSIC ${version}", artifactName: name });
+            delete b.publish; fs.writeFileSync("mac-build.json", JSON.stringify(b, null, 1));'
+
       - name: Fabriquer la version Mac Apple (M1, M2, M3, M4)
         working-directory: app
         run: |
           rm -f node_modules/ffmpeg-static/ffmpeg
           npm_config_platform=darwin npm_config_arch=arm64 node node_modules/ffmpeg-static/install.js
-          npx electron-builder --mac dmg --arm64 --publish never "-c.mac.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}" "-c.dmg.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}"
+          npx electron-builder --mac dmg --arm64 --publish never --config mac-build.json
 
       - name: Fabriquer la version Mac Intel
         working-directory: app
         run: |
           rm -f node_modules/ffmpeg-static/ffmpeg
           npm_config_platform=darwin npm_config_arch=x64 node node_modules/ffmpeg-static/install.js
-          npx electron-builder --mac dmg --x64 --publish never "-c.mac.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}" "-c.dmg.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}"
+          npx electron-builder --mac dmg --x64 --publish never --config mac-build.json
+
+      - name: Vérifier la signature
+        working-directory: app
+        run: |
+          # sans signature, macOS dit « BOB MUSIC est endommagé » : on signe (signature locale) et on refait le .dmg si besoin
+          for d in dist/mac-arm64 dist/mac; do
+            [ -d "$d" ] || continue
+            app=$(ls -d "$d"/*.app | head -1); arch=$([ "$d" = dist/mac-arm64 ] && echo arm64 || echo x64)
+            if ! codesign --verify --deep "$app" 2>/dev/null; then
+              echo "Signature absente pour $arch : signature et nouveau .dmg"
+              xattr -cr "$app"; codesign --force --deep -s - "$app"
+              dmg=$(ls dist/*-mac-$arch.dmg | head -1); rm -f "$dmg"
+              hdiutil create -volname "BOB MUSIC" -srcfolder "$app" -ov -format UDZO "$dmg"
+            else echo "$arch : signature OK"; fi
+          done
 
       - name: Ajouter à la version sur GitHub
         working-directory: app
