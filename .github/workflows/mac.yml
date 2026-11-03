@@ -1,0 +1,69 @@
+# BOB MUSIC — fabrique automatiquement la version Mac (Apple + Intel) à chaque nouvelle version publiée depuis le PC.
+# Ce fichier se place dans le dépôt GitHub sous : .github/workflows/mac.yml
+name: Version Mac
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Version à fabriquer (ex. v2.17.0) — vide = la dernière"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  mac:
+    runs-on: macos-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Version à fabriquer
+        id: v
+        run: |
+          TAG="${{ github.event.release.tag_name || inputs.tag }}"
+          if [ -z "$TAG" ]; then TAG=$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName -q .tagName); fi
+          echo "Version : $TAG"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Récupérer le code envoyé par le PC
+        run: |
+          # le PC envoie le code juste après les fichiers Windows : on attend qu'il arrive (20 min maximum)
+          for i in $(seq 1 40); do
+            if gh release download "${{ steps.v.outputs.tag }}" --repo "$GITHUB_REPOSITORY" --pattern '*-source.tar.gz' --dir dl --clobber 2>/dev/null; then break; fi
+            echo "En attente du code… ($i/40)"; sleep 30
+          done
+          ls dl/*-source.tar.gz
+          mkdir app && tar -xzf dl/*-source.tar.gz -C app
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installer
+        working-directory: app
+        run: npm install
+
+      - name: Fabriquer la version Mac Apple (M1, M2, M3, M4)
+        working-directory: app
+        run: |
+          rm -f node_modules/ffmpeg-static/ffmpeg
+          npm_config_platform=darwin npm_config_arch=arm64 node node_modules/ffmpeg-static/install.js
+          npx electron-builder --mac dmg --arm64 --publish never
+
+      - name: Fabriquer la version Mac Intel
+        working-directory: app
+        run: |
+          rm -f node_modules/ffmpeg-static/ffmpeg
+          npm_config_platform=darwin npm_config_arch=x64 node node_modules/ffmpeg-static/install.js
+          npx electron-builder --mac dmg --x64 --publish never
+
+      - name: Ajouter à la version sur GitHub
+        working-directory: app
+        run: |
+          ls -la dist/*.dmg
+          gh release upload "${{ steps.v.outputs.tag }}" dist/*.dmg --clobber --repo "$GITHUB_REPOSITORY"
+          node build/release-notes.js
