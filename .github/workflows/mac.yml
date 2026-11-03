@@ -52,14 +52,14 @@ jobs:
         run: |
           rm -f node_modules/ffmpeg-static/ffmpeg
           npm_config_platform=darwin npm_config_arch=arm64 node node_modules/ffmpeg-static/install.js
-          npx electron-builder --mac dmg --arm64 --publish never
+          npx electron-builder --mac dmg --arm64 --publish never "-c.mac.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}" "-c.dmg.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}"
 
       - name: Fabriquer la version Mac Intel
         working-directory: app
         run: |
           rm -f node_modules/ffmpeg-static/ffmpeg
           npm_config_platform=darwin npm_config_arch=x64 node node_modules/ffmpeg-static/install.js
-          npx electron-builder --mac dmg --x64 --publish never
+          npx electron-builder --mac dmg --x64 --publish never "-c.mac.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}" "-c.dmg.artifactName=BOB-MUSIC-\${version}-mac-\${arch}.\${ext}"
 
       - name: Ajouter à la version sur GitHub
         working-directory: app
