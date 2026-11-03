@@ -47,11 +47,7 @@ artistes, albums, titres, playlists, recherche, file d'attente… avec une vraie
 6. Dans la fenêtre suivante, clique sur **Ouvrir**. C'est fait : BOB MUSIC s'ouvrira ensuite normalement, sans rien redemander.
 
 > Ce message apparaît parce que BOB MUSIC n'est pas distribué par l'App Store : l'app ne contient rien de dangereux.
-> Si macOS dit que BOB MUSIC est **« endommagé »** : ouvre le **Terminal** (Cmd + Espace, tape « Terminal »), colle la ligne ci-dessous, appuie sur Entrée, puis recommence l'étape 3.
->
-> ```
-> xattr -cr "/Applications/BOB MUSIC.app"
-> ```
+
 
 **Version portable :** le fichier `BOB-MUSIC-x.y.z-portable.exe` se lance sans installation, depuis une clé USB par exemple. Elle ne se met pas à jour toute seule.
 
