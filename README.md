@@ -1,152 +1,121 @@
-<p align="center">
-  <img src="images/banniere.png" alt="BOB MUSIC" width="720">
-</p>
+<div align="center">
 
-<p align="center">
-  <b>Le lecteur de musique de bureau pour ton serveur Plex.</b><br>
-  Qualité Lossless, statistiques d'écoute, nouveautés de tes artistes, et mises à jour automatiques.
-</p>
+# 🎧 BOB MUSIC
 
-<p align="center">
-  <a href="https://github.com/BOB-MUSIC/BOBMUSIC/releases/latest"><b>⬇️ Télécharger la dernière version</b></a>
-  &nbsp;•&nbsp; Windows 10 / 11 et macOS &nbsp;•&nbsp; Gratuit
-</p>
+**Le lecteur de musique de bureau pour ton serveur Plex.**
+Son haute fidélité, mode DJ, radios, podcasts, paroles, statistiques… tout ta musique, au même endroit.
 
-<p align="center">
-  <img src="images/apercu.png" alt="Aperçu de BOB MUSIC" width="100%">
-</p>
+**[⬇️ Télécharger la dernière version](https://github.com/BOB-MUSIC/BOBMUSIC/releases/latest)**
+
+Windows 10 / 11 · macOS (Apple M1 à M4 et Intel) · Gratuit
+
+</div>
 
 ---
 
 ## ✨ En bref
 
-BOB MUSIC se connecte à ton serveur **Plex** et te donne accès à toute ta bibliothèque musicale dans une application **Windows et Mac** rapide et élégante :
-artistes, albums, titres, playlists, recherche, file d'attente… avec une vraie attention portée à la **qualité du son**.
-
-## 📥 Installation
-
-### 🪟 Sur Windows
-
-1. Va sur la page des **[versions (Releases)](https://github.com/BOB-MUSIC/BOBMUSIC/releases/latest)**.
-2. Dans la partie **Téléchargements**, prends l'**Installateur Windows** (`BOB-MUSIC-Setup-x.y.z.exe`).
-3. Lance-le et suis l'installation : pas besoin d'être administrateur. Les raccourcis Bureau et menu Démarrer sont créés.
-
-> **Windows affiche « Windows a protégé votre ordinateur » ?**
-> C'est normal pour un logiciel indépendant non signé. Clique sur **Informations complémentaires → Exécuter quand même**.
-
-### 🍎 Sur Mac
-
-1. Sur la même page, dans **Téléchargements › macOS**, prends :
-   - **`BOB-MUSIC-x.y.z-mac-arm64.dmg`** pour un Mac **Apple** (M1, M2, M3, M4) ;
-   - **`BOB-MUSIC-x.y.z-mac-x64.dmg`** pour un Mac **Intel**.
-   (Menu  › *À propos de ce Mac* indique « Puce Apple » ou « Processeur Intel ».)
-2. Ouvre le `.dmg` et **glisse BOB MUSIC dans le dossier Applications**.
-3. Ouvre **Applications** et double-clique sur BOB MUSIC. Un message dit qu'Apple n'a pas pu vérifier l'app : clique sur **Terminé**.
-4. Ouvre **Réglages Système › Confidentialité et sécurité** et descends jusqu'à la partie **Sécurité**.
-5. À côté de « BOB MUSIC a été bloqué… », clique sur **Ouvrir quand même**, puis confirme avec ton mot de passe (ou ton empreinte).
-6. Dans la fenêtre suivante, clique sur **Ouvrir**. C'est fait : BOB MUSIC s'ouvrira ensuite normalement, sans rien redemander.
-
-> Ce message apparaît parce que BOB MUSIC n'est pas distribué par l'App Store : l'app ne contient rien de dangereux.
-
-
-**Version portable :** le fichier `BOB-MUSIC-x.y.z-portable.exe` se lance sans installation, depuis une clé USB par exemple. Elle ne se met pas à jour toute seule.
-
-## 🔑 Première connexion
-
-- Clique sur **Se connecter avec Plex** : ton navigateur s'ouvre, connecte-toi et autorise l'application.
-- BOB MUSIC trouve tes serveurs et tes bibliothèques musicales automatiquement.
-- La connexion est mémorisée pour les fois suivantes.
-
-Tu peux aussi te connecter **manuellement** avec l'adresse du serveur (ex. `http://192.168.1.10:32400`) et ton jeton `X-Plex-Token`.
-
-## 🎧 Qualité de lecture : Lossless, sans rien installer
-
-<p align="center"><img src="images/lecture.png" alt="Réglages de qualité de lecture" width="620"></p>
-
-BOB MUSIC lit le **fichier original**. Les formats que Windows ne sait pas lire (ALAC / Apple Lossless, AIFF, WMA, APE, WavPack, DSD…) sont décodés **sur ton ordinateur (PC ou Mac), sans aucune perte**, par le décodeur intégré. Il est **fourni avec l'application** : aucun codec à installer.
-
-Dans **⚙ → Lecture et conversion**, choisis ton mode :
-
-| Mode | Pour qui ? |
-|---|---|
-| **Automatique** (recommandé) | Le meilleur des deux : l'original en priorité, et une conversion en MP3 320 kbps seulement si un fichier est illisible. |
-| **Lossless** | Les puristes : jamais de conversion, la qualité d'origine garantie. |
-| **Tout en MP3 320 kbps** | Les connexions lentes ou l'écoute à distance : 2 à 4 fois moins de données. |
-
-Des badges indiquent la qualité du titre en cours : *Sans perte*, *Hi-Res*, *MP3 320 kbps*…
-
-## 📊 Statistiques d'écoute (Last.fm)
-
-<p align="center"><img src="images/stats-accueil.png" alt="Résumé de la semaine sur l'accueil" width="100%"></p>
-
-Relie ton compte **Last.fm** (⚙ → Last.fm et statistiques) pour obtenir :
-
-- un **résumé de la semaine** sur l'accueil : nombre d'écoutes, comparaison avec la semaine précédente, graphique jour par jour, artistes, titre et album de la semaine ;
-- une page **Statistiques** complète : artistes, albums et titres les plus écoutés, écoutes par jour et par heure, écoutes récentes ;
-- des périodes au choix : **Aujourd'hui, 7 jours, 1 mois, 3 mois, 6 mois, 12 mois, depuis toujours** ;
-- l'envoi de tes écoutes à Last.fm (scrobbling).
-
-## 🎵 Toutes les fonctions
-
-- **Accueil personnalisable** : glisse-dépose les catégories et les modules (Nouveautés, Statistiques), masque ce que tu ne veux pas voir, ajoute des rangées par genre, décennie ou playlist.
-- **Nouveautés** : les albums, EP et singles récents ou à venir de tes artistes préférés, avec écoute des extraits.
-- **Page artiste** : titres populaires, discographie, biographie traduite automatiquement.
-- **Paroles** synchronisées, écran « En cours de lecture » plein écran.
-- **Automix** ∞ : quand la file d'attente se termine, la musique continue avec des titres similaires de ta bibliothèque.
-- **Mini lecteur** détachable et toujours visible ; boutons de lecture dans la barre des tâches (Windows) et progression sur l'icône du Dock (Mac).
-- **Touches multimédia** du clavier, panneau média du système, boutons Précédent / Suivant de la souris.
-- **Raccourcis** : `Espace` lecture/pause, `← / →` ±10 s, `Ctrl + ← / →` titre précédent/suivant.
-- **10 thèmes** en dégradé et un thème sur mesure.
-- **Gérer ta bibliothèque** (réservé au propriétaire du serveur Plex) : modifier titres, jaquettes et genres, **corriger l'association** d'un album ou d'un artiste comme dans Plex (avec la liste des titres pour comparer), **fusionner** les albums en double ou les **séparer**, actualiser la bibliothèque.
-- La lecture apparaît dans le **tableau de bord Plex** (« En cours de lecture »), et les titres écoutés sont marqués comme lus.
-- Application en **français** et en **anglais**.
-
-## 📱 Télécommande sur ton téléphone
-
-Pilote BOB MUSIC depuis ton **iPhone** ou ton **Android**, sans rien installer : dans **⚙ › Télécommande**, active-la et scanne le QR code (téléphone sur le même Wi-Fi).
-Lecture, file d'attente, recherche, albums et artistes, playlists, volume, qualité audio, **paroles synchronisées en plein écran**… Ajoute-la à l'écran d'accueil pour l'avoir comme une appli.
-Plusieurs ordinateurs avec BOB MUSIC ? Passe de l'un à l'autre depuis la télécommande.
-
-## 🔄 Mises à jour automatiques
-
-<p align="center"><img src="images/a-propos.png" alt="À propos et mises à jour" width="560"></p>
-
-**Windows (version installée)** : BOB MUSIC vérifie tout seul s'il existe une nouvelle version, au démarrage puis toutes les 4 heures, la télécharge en arrière-plan et te propose de **redémarrer** pour l'installer.
-**Mac** : BOB MUSIC te prévient et te donne le lien du bon fichier ; il suffit de remplacer l'appli dans Applications.
-Dans les deux cas, tes réglages sont conservés.
-
-Ta version est affichée en bas du menu **⚙** et dans **⚙ → À propos et mises à jour**.
-
-## ❓ Questions fréquentes
-
-<details>
-<summary><b>Faut-il un abonnement Plex Pass ?</b></summary>
-Non. Il faut simplement un serveur Plex avec une bibliothèque de musique, et un compte qui y a accès.
-</details>
-
-<details>
-<summary><b>Pourquoi je ne peux pas modifier les albums ?</b></summary>
-Seul le <b>propriétaire</b> du serveur Plex peut modifier les informations de la bibliothèque. Si le serveur t'est partagé, ces boutons sont masqués.
-</details>
-
-<details>
-<summary><b>Un titre est passé avec un message « conversion désactivée »</b></summary>
-Tu es en mode <b>Lossless</b> et ce fichier est illisible sans conversion. Passe en mode <b>Automatique</b> dans ⚙ → Lecture et conversion.
-</details>
-
-<details>
-<summary><b>Comment profiter du Hi-Res (24 bits / 96 kHz et plus) ?</b></summary>
-BOB MUSIC passe par le mixeur audio du système. Règle la fréquence de ta sortie audio :<br>
-<b>Windows</b> : <i>Paramètres → Son → ton périphérique → Format</i> (ex. 24 bits, 96 000 Hz).<br>
-<b>Mac</b> : application <i>Configuration audio et MIDI</i> → ta sortie → <i>Format</i>.
-</details>
-
-<details>
-<summary><b>Comment désinstaller ?</b></summary>
-<b>Windows</b> : Paramètres → Applications → <b>BOB MUSIC</b> → Désinstaller.<br>
-<b>Mac</b> : glisse <b>BOB MUSIC</b> depuis Applications vers la Corbeille.
-</details>
+- 🎵 **Toute ta bibliothèque Plex**, dans une appli rapide et soignée : artistes, albums, titres, genres, décennies, playlists.
+- 🔊 **Un son sans compromis** : lecture sans perte, Hi-Res, **mode bit-perfect** et chemin du son affiché étape par étape.
+- 🎛️ **Mode DJ** à deux platines, avec mix automatique.
+- 📻 **Des milliers de radios et de podcasts**, avec des logos en haute définition.
+- 🎤 **Paroles synchronisées**, traduites en un clic, et un **mode karaoké** plein écran.
+- 📊 **Tes statistiques d'écoute** et ton **BOB Wrapped** de l'année.
+- 📱 **Télécommande sur ton téléphone**, sans rien installer.
 
 ---
 
-<p align="center"><sub>BOB MUSIC est un projet indépendant, non affilié à Plex Inc. ni à Last.fm.</sub></p>
+## 🔊 Pour les amoureux du son
+
+| | |
+|---|---|
+| **Sans perte et Hi-Res** | FLAC, ALAC, WAV, AIFF, DSD… lus tels quels, jusqu'en 24 bits / 192 kHz, grâce au décodeur intégré. |
+| **Mode exclusif (bit-perfect)** | Le son part directement vers ta carte son ou ton DAC, à la fréquence d'origine de chaque titre, sans que Windows ou macOS le rééchantillonne. BOB peut installer lui-même le moteur nécessaire (mpv). |
+| **Chemin du son** | Du fichier jusqu'à l'enceinte : chaque étape, sa qualité, et l'endroit exact où la qualité baisse s'il y en a un. |
+| **Correction du casque (AutoEQ)** | Choisis ton casque parmi plus de 4 000 modèles mesurés : BOB corrige ses défauts pour un son neutre. |
+| **Égaliseur 10 bandes** | Préréglages, préampli, limiteur, sortie audio au choix (casque, DAC USB, HDMI…). |
+| **Volume égal et enchaînements** | Volume homogène d'un titre à l'autre (ReplayGain), enchaînement sans blanc, fondus et mix entre les titres. |
+| **Classement par qualité** | Trie tes albums par qualité, échantillonnage ou format. |
+
+## 🎛️ Mode DJ
+
+Deux platines avec vinyles animés et effet scratch, tempo, boucles, repères, égaliseur 3 bandes et filtres. Le **mix automatique** enchaîne tout seul par genre, décennie ou artiste, sans toucher à la vitesse ni à la tonalité. Moments de soirée en couleur, recherche dans toute ta bibliothèque, enregistrement de ton mix.
+
+## 📻 Radios et podcasts
+
+- Des **milliers de radios** de France et du monde, par pays ou par genre, avec les grandes radios françaises en tête et des **logos officiels en HD**.
+- Les **podcasts** : recherche dans l'annuaire d'Apple Podcasts, les plus écoutés en France, abonnements, nouveaux épisodes, **reprise là où tu t'étais arrêté**, vitesse de lecture, −15 s / +30 s. Import de tes abonnements depuis une autre appli.
+
+## 🎤 Paroles et karaoké
+
+- **Paroles synchronisées** qui défilent avec la chanson, en grand en plein écran.
+- **Traduction des paroles** en un clic, sous chaque ligne.
+- **Mode karaoké** : la ligne se remplit au rythme du chant, voix atténuée réglable, décompte pendant les passages instrumentaux.
+
+## 🧭 Découvrir et redécouvrir
+
+- **Mix du jour** : tes artistes du moment, des titres oubliés, des albums jamais écoutés de tes genres préférés.
+- **Découvrir** par genre, **Nouveautés** de tes artistes et **classements** Deezer.
+- **Fiches enrichies** : biographies en français, crédits des albums (musiciens, producteur, studio), fiche des artistes, concerts près de chez toi.
+- **Radio d'artiste**, Automix, favoris, notes, téléchargement pour l'écoute hors ligne.
+
+## 📊 Statistiques et jeux
+
+- **Statistiques d'écoute** et **BOB Wrapped**, ton année en musique, à partager en image.
+- **Blind test** entre amis, chacun répond depuis son téléphone, avec une version pour les enfants.
+- **Last.fm** : scrobbles et historique.
+
+## 🏠 À la maison
+
+- **Télécommande** sur ton téléphone : il suffit de scanner un QR code.
+- **Multiroom** : la même musique sur plusieurs PC, synchronisée.
+- **Commande vocale** (Windows) : « suivant », « mets du Clapton », « lance la playlist Soirée »…
+- **Mini-lecteur** et intégration aux touches multimédia du clavier.
+
+## 🧹 Une bibliothèque impeccable
+
+Le **réparateur de fiches** trouve les albums sans pochette, sans année ou sans genre, les artistes sans photo, les albums en double et les artistes écrits de plusieurs façons, puis les corrige en un clic dans Plex.
+
+---
+
+## ⬇️ Installation
+
+### Windows
+1. Télécharge **`BOB-MUSIC-Setup-….exe`** dans la [dernière version](https://github.com/BOB-MUSIC/BOBMUSIC/releases/latest).
+2. Lance-le. Si Windows affiche « Windows a protégé votre ordinateur », clique sur **Informations complémentaires**, puis **Exécuter quand même** (BOB n'est pas distribué par le Microsoft Store).
+3. Connecte-toi avec ton compte Plex : BOB trouve ton serveur et ta musique tout seul.
+
+Une version **portable**, sans installation, est aussi disponible.
+
+### macOS
+1. Télécharge le **`.dmg`** qui correspond à ton Mac : **arm64** pour les puces Apple M1 à M4, **x64** pour les Mac Intel.
+2. Ouvre-le et glisse **BOB MUSIC** dans **Applications**.
+3. Au premier lancement : **Réglages Système › Confidentialité et sécurité › Ouvrir quand même**.
+
+### Mises à jour
+BOB se met à jour tout seul : un bandeau te prévient quand une nouvelle version est prête, avec la liste des nouveautés.
+
+---
+
+## ❓ Questions fréquentes
+
+**Faut-il un abonnement Plex Pass ?**
+Non. Il te faut seulement un serveur Plex avec ta musique et un compte Plex gratuit.
+
+**Ma musique part-elle sur Internet ?**
+Non. BOB lit ta musique directement sur ton serveur Plex. Seules quelques infos (pochettes manquantes, paroles, biographies…) sont demandées à des services publics.
+
+**Certaines fonctions demandent une clé ?**
+Oui, trois fonctions facultatives demandent ta propre clé gratuite : **Last.fm** (statistiques), **YouTube** (clips) et **Ticketmaster** (concerts). BOB t'explique comment l'obtenir en une minute.
+
+**Une fonction ne marche plus ?**
+Va dans **Paramètres › À propos › État des services** : tu vois tout de suite si un service extérieur est en panne. Ta musique, elle, ne dépend que de ton serveur Plex.
+
+**Je veux signaler un problème.**
+Active le **mode debug** (Ctrl + Maj + D), reproduis le problème, exporte le journal et ouvre une [issue](https://github.com/BOB-MUSIC/BOBMUSIC/issues) en le joignant. Les mots de passe et jetons y sont masqués.
+
+---
+
+<div align="center">
+<sub>BOB MUSIC est un projet indépendant, non affilié à Plex Inc., Last.fm, Deezer ni Apple.</sub>
+</div>
