@@ -9,6 +9,10 @@ Son haute fidélité, mode DJ, radios, podcasts, paroles, statistiques… tout t
 
 Windows 10 / 11 · macOS (Apple M1 à M4 et Intel) · Gratuit
 
+<br>
+
+<img src="docs/apercu.jpg" alt="Aperçu de BOB MUSIC : l'accueil avec les Mix du jour, les ajouts récents et les artistes écoutés" width="100%">
+
 </div>
 
 ---
