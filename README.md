@@ -120,6 +120,31 @@ Active le **mode debug** (Ctrl + Maj + D), reproduis le problème, exporte le jo
 
 ---
 
+## 🙏 Sources et crédits
+
+BOB MUSIC s'appuie sur des services gratuits, utilisés dans le respect de leurs conditions d'usage **non commercial** :
+
+| Service | Utilisé pour |
+|---|---|
+| [Plex](https://www.plex.tv) | ta bibliothèque musicale |
+| [Deezer](https://developers.deezer.com) | nouveautés, top des titres, extraits de 30 s, pochettes manquantes |
+| [Last.fm](https://www.last.fm) | scrobbles et statistiques *(ta clé)* |
+| [MusicBrainz](https://musicbrainz.org) | crédits des albums, fiches des artistes |
+| [Wikipédia](https://fr.wikipedia.org) et [Wikidata](https://www.wikidata.org) | biographies, présentations, logos de radios |
+| [LRCLIB](https://lrclib.net) · [lyrics.ovh](https://lyrics.ovh) | paroles |
+| [Lingva Translate](https://github.com/thedaviddelta/lingva-translate) · Google Traduction en secours | traduction des paroles |
+| [Radio Browser](https://www.radio-browser.info) · TuneIn en secours | annuaire et logos des radios |
+| [Apple Podcasts](https://podcasts.apple.com) | recherche et classement des podcasts |
+| [YouTube](https://www.youtube.com) · [Ticketmaster](https://www.ticketmaster.fr) | clips et concerts *(ta clé)* |
+| [AutoEq](https://github.com/jaakkopasanen/AutoEq) | correction des casques |
+| [mpv](https://mpv.io) | lecture en mode exclusif (bit-perfect) |
+
+Merci à toutes ces équipes. 💛
+
+**BOB MUSIC est et restera gratuit, sans publicité ni abonnement.** Les logos des radios et les pochettes appartiennent à leurs propriétaires et servent uniquement à les reconnaître. Un ayant droit souhaite le retrait d'un élément ? Ouvre une [issue](https://github.com/BOB-MUSIC/BOBMUSIC/issues) : ce sera fait rapidement.
+
+---
+
 <div align="center">
-<sub>BOB MUSIC est un projet indépendant, non affilié à Plex Inc., Last.fm, Deezer ni Apple.</sub>
+<sub>BOB MUSIC est un projet indépendant, non affilié à Plex, Deezer, Last.fm, Apple, Google, TuneIn ni aux radios citées.</sub>
 </div>
