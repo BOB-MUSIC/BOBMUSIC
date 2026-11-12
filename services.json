@@ -1,20 +1,54 @@
 {
-  "_aide": "Réglages à distance des services de BOB MUSIC. Modifie ce fichier puis lance PUBLIER-SERVICES.bat : tous les BOB installés le relisent (au démarrage puis toutes les 6 h). « on »: false coupe un service ; « why » explique pourquoi ; « rewrite » remplace une adresse par une autre ; « translate.order » choisit l'ordre des services de traduction (lingva, google, google2) ; « notice » affiche un message une seule fois (change son « id » pour un nouveau message).",
+  "_aide": "Réglages à distance des services de BOB MUSIC. Modifie ce fichier puis lance PUBLIER-SERVICES.bat : tous les BOB installés le relisent (au démarrage puis toutes les 6 h). « on »: false coupe un service ; « why » explique pourquoi ; « rewrite » remplace une adresse par une autre ; « translate.order » choisit l'ordre des services de traduction (mymemory, google, google2) ; « notice » affiche un message une seule fois (change son « id » pour un nouveau message).",
   "version": 1,
   "services": {
-    "deezer": { "on": true },
-    "lastfm": { "on": true },
-    "musicbrainz": { "on": true },
-    "wikipedia": { "on": true },
-    "lrclib": { "on": true },
-    "lyricsovh": { "on": true },
-    "translate": { "on": true, "order": ["lingva", "google", "google2"] },
-    "radiobrowser": { "on": true },
-    "tunein": { "on": true },
-    "itunes": { "on": true },
-    "youtube": { "on": true },
-    "ticketmaster": { "on": true },
-    "github": { "on": true }
+    "deezer": {
+      "on": true
+    },
+    "lastfm": {
+      "on": true
+    },
+    "musicbrainz": {
+      "on": true
+    },
+    "wikipedia": {
+      "on": true
+    },
+    "lrclib": {
+      "on": true
+    },
+    "lyricsovh": {
+      "on": true
+    },
+    "mymemory": {
+      "on": true
+    },
+    "translate": {
+      "on": true,
+      "order": [
+        "mymemory",
+        "google",
+        "google2"
+      ]
+    },
+    "radiobrowser": {
+      "on": true
+    },
+    "tunein": {
+      "on": true
+    },
+    "itunes": {
+      "on": true
+    },
+    "youtube": {
+      "on": true
+    },
+    "ticketmaster": {
+      "on": true
+    },
+    "github": {
+      "on": true
+    }
   },
   "rewrite": [],
   "notice": null
