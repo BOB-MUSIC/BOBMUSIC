@@ -132,12 +132,13 @@ BOB MUSIC s'appuie sur des services gratuits, utilisés dans le respect de leurs
 | [MusicBrainz](https://musicbrainz.org) | crédits des albums, fiches des artistes |
 | [Wikipédia](https://fr.wikipedia.org) et [Wikidata](https://www.wikidata.org) | biographies, présentations, logos de radios |
 | [LRCLIB](https://lrclib.net) · [lyrics.ovh](https://lyrics.ovh) | paroles |
-| [Lingva Translate](https://github.com/thedaviddelta/lingva-translate) · Google Traduction en secours | traduction des paroles |
+| [MyMemory](https://mymemory.translated.net) · Google Traduction en secours | traduction des paroles |
 | [Radio Browser](https://www.radio-browser.info) · TuneIn en secours | annuaire et logos des radios |
 | [Apple Podcasts](https://podcasts.apple.com) | recherche et classement des podcasts |
 | [YouTube](https://www.youtube.com) · [Ticketmaster](https://www.ticketmaster.fr) | clips et concerts *(ta clé)* |
 | [AutoEq](https://github.com/jaakkopasanen/AutoEq) | correction des casques |
 | [mpv](https://mpv.io) | lecture en mode exclusif (bit-perfect) |
+| [Butterchurn](https://github.com/jberg/butterchurn) (MilkDrop) | visualiseur du plein écran |
 
 Merci à toutes ces équipes. 💛
 
